@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +31,7 @@ public class DeviceDesc extends AppCompatActivity {
     String deviceQty;
     TextView device_qty;
     String deviceDesc;
+    ImageView deviceImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,10 +44,29 @@ public class DeviceDesc extends AppCompatActivity {
         }
         device_name=findViewById(R.id.tvDeviceName);
         device_desc=findViewById(R.id.tvDeviceDesc);
+        deviceImage=findViewById(R.id.imgDeviceImage);
         device_qty=findViewById(R.id.tvDeviceQty);
         device_qty.setText(deviceQty);
         device_name.setText(device_id);
         fetchData();
+        if(device_id.equalsIgnoreCase("monitor")){
+            deviceImage.setImageResource(R.drawable.monitor);
+        }
+        if(device_id.equalsIgnoreCase("cpu")){
+            deviceImage.setImageResource(R.drawable.cpu);
+        }
+        if(device_id.equalsIgnoreCase("mouse")){
+            deviceImage.setImageResource(R.drawable.mouse);
+        }
+        if(device_id.equalsIgnoreCase("router")){
+            deviceImage.setImageResource(R.drawable.router);
+        }
+        if(device_id.equalsIgnoreCase("projector")){
+            deviceImage.setImageResource(R.drawable.projector);
+        }
+        if(device_id.equalsIgnoreCase("keyboard")){
+            deviceImage.setImageResource(R.drawable.keyboard);
+        }
     }
 
     private void fetchData() {

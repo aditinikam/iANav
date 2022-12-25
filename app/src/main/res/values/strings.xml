@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">infraAccess</string>
-    <string name="api">http://192.168.79.251:5000/</string>
+    <string name="api">http://192.168.216.54:5000/</string>
 </resources>

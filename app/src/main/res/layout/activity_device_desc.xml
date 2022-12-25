@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DeviceDesc">
+    tools:context=".DeviceDesc"
+    android:background="@color/purple_200">
 
     <ImageView
         android:id="@+id/imgDeviceImage"
@@ -25,7 +26,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="20dp"
         android:text="Name"
-        android:textSize="35dp"/>
+        android:textSize="40dp"/>
 
     <TextView
         android:id="@+id/tvDeviceDesc"
@@ -38,7 +39,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:text="hdgjhdgjdh dhgvd dgyvdgv dvdhcvb uydgvdhcv dvdjvh jhvbdj hdgv dhvgdgv"
-        android:textSize="15dp"/>
+        android:textSize="19dp"/>
 
     <TextView
         android:id="@+id/tvDeviceQty"
